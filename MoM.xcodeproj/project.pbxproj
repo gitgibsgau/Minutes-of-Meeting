@@ -8,20 +8,41 @@
 
 /* Begin PBXBuildFile section */
 		EFC8A8971EA2F296001BC38B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC8A8961EA2F296001BC38B /* AppDelegate.swift */; };
-		EFC8A8991EA2F296001BC38B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC8A8981EA2F296001BC38B /* ViewController.swift */; };
+		EFC8A8991EA2F296001BC38B /* RecordSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC8A8981EA2F296001BC38B /* RecordSoundsViewController.swift */; };
 		EFC8A89C1EA2F296001BC38B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC8A89A1EA2F296001BC38B /* Main.storyboard */; };
 		EFC8A89E1EA2F296001BC38B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFC8A89D1EA2F296001BC38B /* Assets.xcassets */; };
 		EFC8A8A11EA2F296001BC38B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC8A89F1EA2F296001BC38B /* LaunchScreen.storyboard */; };
+		EFC8A8A91EA32C6A001BC38B /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC8A8A81EA32C6A001BC38B /* PlaySoundsViewController.swift */; };
+		EFC8A8AB1EA33B7A001BC38B /* PlaySoundsViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC8A8AA1EA33B7A001BC38B /* PlaySoundsViewController+Audio.swift */; };
+		EFC8A8B61EA5B7CC001BC38B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC8A8AD1EA344FA001BC38B /* AVFoundation.framework */; };
+		EFC8A8B71EA5B7CC001BC38B /* AVFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFC8A8AD1EA344FA001BC38B /* AVFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EFC8A8B81EA5B7CC001BC38B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EFC8A8B71EA5B7CC001BC38B /* AVFoundation.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EFC8A8931EA2F296001BC38B /* MoM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC8A8961EA2F296001BC38B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EFC8A8981EA2F296001BC38B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EFC8A8981EA2F296001BC38B /* RecordSoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundsViewController.swift; sourceTree = "<group>"; };
 		EFC8A89B1EA2F296001BC38B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EFC8A89D1EA2F296001BC38B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFC8A8A01EA2F296001BC38B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFC8A8A21EA2F296001BC38B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFC8A8A81EA32C6A001BC38B /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
+		EFC8A8AA1EA33B7A001BC38B /* PlaySoundsViewController+Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlaySoundsViewController+Audio.swift"; sourceTree = "<group>"; };
+		EFC8A8AD1EA344FA001BC38B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFC8A8B61EA5B7CC001BC38B /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +62,7 @@
 			children = (
 				EFC8A8951EA2F296001BC38B /* MoM */,
 				EFC8A8941EA2F296001BC38B /* Products */,
+				EFC8A8AC1EA344FA001BC38B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +78,23 @@
 			isa = PBXGroup;
 			children = (
 				EFC8A8961EA2F296001BC38B /* AppDelegate.swift */,
-				EFC8A8981EA2F296001BC38B /* ViewController.swift */,
+				EFC8A8981EA2F296001BC38B /* RecordSoundsViewController.swift */,
 				EFC8A89A1EA2F296001BC38B /* Main.storyboard */,
 				EFC8A89D1EA2F296001BC38B /* Assets.xcassets */,
 				EFC8A89F1EA2F296001BC38B /* LaunchScreen.storyboard */,
 				EFC8A8A21EA2F296001BC38B /* Info.plist */,
+				EFC8A8A81EA32C6A001BC38B /* PlaySoundsViewController.swift */,
+				EFC8A8AA1EA33B7A001BC38B /* PlaySoundsViewController+Audio.swift */,
 			);
 			path = MoM;
+			sourceTree = "<group>";
+		};
+		EFC8A8AC1EA344FA001BC38B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFC8A8AD1EA344FA001BC38B /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +107,7 @@
 				EFC8A88F1EA2F296001BC38B /* Sources */,
 				EFC8A8901EA2F296001BC38B /* Frameworks */,
 				EFC8A8911EA2F296001BC38B /* Resources */,
+				EFC8A8B81EA5B7CC001BC38B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +130,7 @@
 				TargetAttributes = {
 					EFC8A8921EA2F296001BC38B = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = DSL874KWAE;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,7 +171,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFC8A8991EA2F296001BC38B /* ViewController.swift in Sources */,
+				EFC8A8991EA2F296001BC38B /* RecordSoundsViewController.swift in Sources */,
+				EFC8A8AB1EA33B7A001BC38B /* PlaySoundsViewController+Audio.swift in Sources */,
+				EFC8A8A91EA32C6A001BC38B /* PlaySoundsViewController.swift in Sources */,
 				EFC8A8971EA2F296001BC38B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,7 +299,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DSL874KWAE;
 				INFOPLIST_FILE = MoM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.master.MoM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,7 +313,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DSL874KWAE;
 				INFOPLIST_FILE = MoM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.master.MoM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
