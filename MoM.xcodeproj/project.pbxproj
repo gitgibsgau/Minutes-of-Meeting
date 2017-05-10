@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF9F80851EAE95B000650FB4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9F80841EAE95B000650FB4 /* RegisterViewController.swift */; };
+		EF9F80871EAE9F8200650FB4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9F80861EAE9F8200650FB4 /* LoginViewController.swift */; };
 		EFC8A8971EA2F296001BC38B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC8A8961EA2F296001BC38B /* AppDelegate.swift */; };
 		EFC8A8991EA2F296001BC38B /* RecordSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC8A8981EA2F296001BC38B /* RecordSoundsViewController.swift */; };
 		EFC8A89C1EA2F296001BC38B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC8A89A1EA2F296001BC38B /* Main.storyboard */; };
@@ -16,6 +18,7 @@
 		EFC8A8AB1EA33B7A001BC38B /* PlaySoundsViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC8A8AA1EA33B7A001BC38B /* PlaySoundsViewController+Audio.swift */; };
 		EFC8A8B61EA5B7CC001BC38B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC8A8AD1EA344FA001BC38B /* AVFoundation.framework */; };
 		EFC8A8B71EA5B7CC001BC38B /* AVFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFC8A8AD1EA344FA001BC38B /* AVFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFEB8A931EBC2394000CA018 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFEB8A921EBC2394000CA018 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +36,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EF9F80841EAE95B000650FB4 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		EF9F80861EAE9F8200650FB4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EFC8A8931EA2F296001BC38B /* MoM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC8A8961EA2F296001BC38B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFC8A8981EA2F296001BC38B /* RecordSoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundsViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +48,7 @@
 		EFC8A8A81EA32C6A001BC38B /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
 		EFC8A8AA1EA33B7A001BC38B /* PlaySoundsViewController+Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlaySoundsViewController+Audio.swift"; sourceTree = "<group>"; };
 		EFC8A8AD1EA344FA001BC38B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EFEB8A921EBC2394000CA018 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 		EFC8A88A1EA2F296001BC38B = {
 			isa = PBXGroup;
 			children = (
+				EFEB8A921EBC2394000CA018 /* GoogleService-Info.plist */,
 				EFC8A8951EA2F296001BC38B /* MoM */,
 				EFC8A8941EA2F296001BC38B /* Products */,
 				EFC8A8AC1EA344FA001BC38B /* Frameworks */,
@@ -85,6 +92,8 @@
 				EFC8A8A21EA2F296001BC38B /* Info.plist */,
 				EFC8A8A81EA32C6A001BC38B /* PlaySoundsViewController.swift */,
 				EFC8A8AA1EA33B7A001BC38B /* PlaySoundsViewController+Audio.swift */,
+				EF9F80841EAE95B000650FB4 /* RegisterViewController.swift */,
+				EF9F80861EAE9F8200650FB4 /* LoginViewController.swift */,
 			);
 			path = MoM;
 			sourceTree = "<group>";
@@ -159,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFC8A8A11EA2F296001BC38B /* LaunchScreen.storyboard in Resources */,
+				EFEB8A931EBC2394000CA018 /* GoogleService-Info.plist in Resources */,
 				EFC8A89E1EA2F296001BC38B /* Assets.xcassets in Resources */,
 				EFC8A89C1EA2F296001BC38B /* Main.storyboard in Resources */,
 			);
@@ -171,7 +181,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF9F80871EAE9F8200650FB4 /* LoginViewController.swift in Sources */,
 				EFC8A8991EA2F296001BC38B /* RecordSoundsViewController.swift in Sources */,
+				EF9F80851EAE95B000650FB4 /* RegisterViewController.swift in Sources */,
 				EFC8A8AB1EA33B7A001BC38B /* PlaySoundsViewController+Audio.swift in Sources */,
 				EFC8A8A91EA32C6A001BC38B /* PlaySoundsViewController.swift in Sources */,
 				EFC8A8971EA2F296001BC38B /* AppDelegate.swift in Sources */,
@@ -342,6 +354,7 @@
 				EFC8A8A71EA2F296001BC38B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -26,6 +26,16 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         super.viewWillAppear(animated)
         print("viewWillAppear called!!")
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        let isUserLoggedIn = UserDefaults.standard.bool(forKey: "isUserLoggedIn");
+        
+        if(!isUserLoggedIn){
+            self.performSegue(withIdentifier: "loginView", sender: self);
+        }
+        
+    }
 
 
     @IBAction func recordAudio(_ sender: Any) {
